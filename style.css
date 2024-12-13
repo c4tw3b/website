@@ -1,0 +1,136 @@
+#topbar {
+	display:flex;
+	height:50px;
+	margin:0px;
+	overflow:hidden;
+	background-color:crimson;
+	background-image: url(topbar.png);
+	align-items:center;
+	box-shadow: 0px 0px 1000px #e600ff;
+}
+
+@keyframes selecttopbar {
+  from {text-shadow: 0px 0px 0px #ee00ff;}
+  to {text-shadow: 0px 0px 5px #ee00ff;}
+}
+
+@keyframes unselecttopbar {
+  from {text-shadow: 0px 0px 5px #ee00ff;}
+  to {text-shadow: 0px 0px 0px #ee00ff;}
+}
+
+#topbarinner {
+	margin:10px;
+	align-content: center;
+}
+
+#topbarinner a {
+  font-family: "Comic Sans", Cursive, sans-serif;
+  text-align: center;
+  font-size:33px;
+  color: #000000;
+  padding: 10px;
+}
+
+#topbarinner a:link {
+  text-decoration: none;
+  text-shadow: 0px 0px 0px white;
+}
+#topbarinner a:visited {
+  text-decoration: none;
+  text-shadow: 0px 0px 0px white;
+}
+
+#topbarinner a:hover {
+  text-decoration: none;
+  animation-name: selecttopbar;
+  text-shadow: 0px 0px 5px #ee00ff;
+  animation-duration: 0.2s;
+  cursor:help;
+}
+
+#topbarinner a:active {
+  text-decoration: none;
+  text-shadow: 0px 0px 5px #ee00ff;
+  cursor:help;
+}
+
+body {
+	margin:0px;
+	background-image: url(background.gif);
+}
+
+@keyframes imageselect {
+  from {box-shadow:0px 0px 0px #ffffff;}
+  to {box-shadow:0px 0px 15px #8800ff;}
+}
+@keyframes alienimageselect {
+  from {box-shadow:0px 0px 0px #00ff15;}
+  to {box-shadow:0px 0px 15px #00ff15;}
+}
+
+@keyframes orangeimageselect {
+  from {box-shadow:0px 0px 0px #ffaa00;}
+  to {box-shadow:0px 0px 15px #ffaa00;}	
+}
+
+@keyframes imageunselect {
+  from {box-shadow:0px 0px 15px #8800ff;}
+  to {box-shadow:0px 0px 0px #8800ff;}
+}
+
+#silliest {
+	height: 300px;
+	margin: 20px;
+}
+
+#silliest h1 {
+	color:white;
+	font-family: "Comic Sans", Cursive, sans-serif;
+}
+
+#silliest h2 {
+	color:rgba(255,255,255,0.5);
+	font-family: "Comic Sans", Cursive, sans-serif;
+}
+
+#sillyscroller {
+	overflow: visible;
+	height:fit-content;
+}
+
+#sillyscroller img {
+	height:240px;
+	padding:0px;
+	margin:10px;
+	box-shadow:0px 0px 0px #8800ff;
+}
+
+#sillyscroller img:hover {
+	animation:imageselect 0.5s;
+	box-shadow:0px 0px 15px #8800ff;
+}
+
+#alienscroller img {
+	height:240px;
+	padding:0px;
+	margin:10px;
+	box-shadow:0px 0px 0px #00ff15;
+}
+
+#alienscroller img:hover {
+	animation:alienimageselect 0.5s;
+	box-shadow:0px 0px 15px #00ff15;
+}
+
+#orangescroller img {
+	height:240px;
+	padding:0px;
+	margin:10px;
+	box-shadow:0px 0px 0px #ffaa00;
+}
+
+#orangescroller img:hover {
+	animation:orangeimageselect 0.5s;
+	box-shadow:0px 0px 15px #ffaa00;
+}
